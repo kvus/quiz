@@ -1,16 +1,47 @@
-# React + Vite
+# Quiz App - React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Đây là một ứng dụng trắc nghiệm (Quiz) đơn giản được xây dựng bằng React và Vite, giúp người dùng kiểm tra kiến thức về lập trình JavaScript và cấu trúc dữ liệu cơ bản.
 
-Currently, two official plugins are available:
+## 🚀 Tính năng chính
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Bộ câu hỏi đa dạng**: Bao gồm 12 câu hỏi về JavaScript (kiểu dữ liệu, toán tử, JSON...), thuật toán (Big O, Merge Sort) và cấu trúc dữ liệu (Stack, Queue).
+* **Phản hồi tức thì**: Hiển thị thông báo đúng/sai ngay sau khi người dùng chọn đáp án.
+* **Điều hướng linh hoạt**: Cho phép người dùng quay lại câu hỏi trước đó hoặc chuyển sang câu kế tiếp.
+* **Kết quả chi tiết**: Hiển thị tổng số câu trả lời đúng sau khi hoàn thành bài thi.
+* **Tùy chọn làm lại**: Người dùng có thể chọn "Xem lại" để kiểm tra các câu đã làm hoặc "Làm lại" để bắt đầu lượt mới.
+* **Giao diện thân thiện**: Sử dụng CSS tùy chỉnh với thiết kế hiện đại, hỗ trợ hiệu ứng khi di chuột và phản hồi màu sắc cho các tùy chọn.
 
-## React Compiler
+## 🛠️ Công nghệ sử dụng
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Frontend**: React 19.
+* **Công cụ build**: Vite.
+* **Ngôn ngữ**: JavaScript (JSX).
+* **Styling**: CSS.
+* **Linting**: ESLint.
 
-## Expanding the ESLint configuration
+## 📂 Cấu trúc dự án tiêu biểu
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* `src/components/Quiz.jsx`: Chứa dữ liệu câu hỏi và logic chính của bài trắc nghiệm.
+* `src/components/Result.jsx`: Thành phần hiển thị kết quả cuối cùng và các nút điều hướng.
+* `src/App.jsx`: Thành phần bao bọc chính của ứng dụng.
+* `src/index.css`: Các định nghĩa kiểu dáng toàn cục cho ứng dụng.
+
+## 💻 Hướng dẫn cài đặt và chạy
+
+1.  **Cài đặt các gói phụ thuộc**:
+    ```bash
+    npm install
+    ```
+    *(Dựa trên cấu trúc file `package.json`).*
+
+2.  **Chạy ứng dụng ở chế độ phát triển**:
+    ```bash
+    npm run dev
+    ```
+   .
+
+3.  **Xây dựng dự án cho sản xuất**:
+    ```bash
+    npm run build
+    ```
+   .
